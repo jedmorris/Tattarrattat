@@ -62,24 +62,68 @@
 
 	<main class="flex-shrink-0">
 		<div class="container mt-5">
-			<div class="mt-5 d-flex justify-content-center">
-				<h1 class="border-1 border-bottom border-dark">Coding Challenge</h1>
-			</div>
-			<div class="mt-3 d-flex justify-content-center">
-				<h2 class="lead">
-					TATTARRATTAT
-				</h2>
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<div class="mt-5">
+						<h1 class="border-1 border-bottom border-dark">Coding Challenge</h1>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-center mt-3">
+					<h2 class="lead">
+						TATTARRATTAT
+					</h2>
+				</div>
 			</div>
 			<div class="row mt-5">
 				<div class="col">
 					<h2 class="border-1 border-bottom border-dark">
 						Enter a string to be reversed...
 					</h2>
-
-
+					<div class="col">
+						<form class="row">
+							<label class="form-label" for="userString">
+								Enter a string
+							</label>
+							<input type="text" aria-label="User String" id="userString"
+								class="form-control">
+						</form>
+					</div>
+					<div class="col">
+						<button id="btnSubmit" type="button" class="btn btn-primary btn-large">
+							KNOCK KNOCK
+						</button>
+					</div>
+					<div class="col">
+						<label for="userString" class="form-label"></label>
+						<input type="text" id="results" class="form-control">
+					</div>
 				</div>
 				<div class="col">
-
+					<div class="col border border-1 d-flex justify-content-center">
+						<h2>Description</h2>
+					</div>
+					<div class="col">
+						<p class="mt-3">
+							Tattarrattat is a
+							program designed to
+							accept a string input by
+							the user, reverse it,
+							and then return it to
+							the user. Tattarrattat
+							will then indicate
+							whether the inputted
+							string is a palandrome.
+						</p>
+						<p>
+							<strong>Example:</strong>
+							if the user inputs the
+							string "Taco Cat", the
+							program will return
+							"tacocat" and indicate
+							that the string is a
+							palandrome.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -139,7 +183,7 @@
 	<!-- JS  -->
 	<script src="/js/site.js"></script>
 	<script>
-		document.getElementById("btnSubmit").addEventListener("click", getMessage);
+		document.getElementById("btnSubmit").addEventListener("click", getValues);
 	</script>
 </body>
 
