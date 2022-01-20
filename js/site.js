@@ -36,7 +36,7 @@ function reverseString(userStringInput) {
 	return returnString;
 }
 
-function displayString() {
-	
+function displayString(newString) {
+	document.getElementById("results").innerHTML = newString;
 
 }
