@@ -13,7 +13,7 @@ function getValues() {
 
 	// check if user input is string
 	if (typeof userStringInput === 'string') {
-	
+
 		let newString = reverseString(userStringInput);
 		displayUserString(newString);
 	} else {
@@ -34,6 +34,13 @@ function reverseString(userStringInput) {
 		returnString += userStringInput[i];
 	}
 	return returnString;
+}
+
+function checkForPalindrome() {
+	userStringInput = userStringInput.toLowerCase();
+
+	isPalindrome = false;
+
 }
 
 function displayString(newString) {
